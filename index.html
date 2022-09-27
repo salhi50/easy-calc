@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main css file -->
+    <link rel="stylesheet" href="assets/css/page.css">
+    <!-- Google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Main script -->
+    <script defer src="assets/js/calculator.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Result section -->
+        <section class="result">
+            <div class="input" id="input">&nbsp;</div>
+
+            <div class="output">
+                <span class="equal-icon">&equals;</span>
+                <span id="output">&nbsp;</span>
+            </div>
+
+            <div class="output-control">
+                <span class="material-symbols-outlined main-icon" id="copy-result" title="Copy">content_copy</span>
+            </div>
+        </section>
+
+        <!-- Control section -->
+        <section class="control-section">
+            <div class="up-bar">
+                <div class="left-bar">
+                    <span class="material-symbols-outlined main-icon" id="toggle-dark" title="Toggle dark mode">brightness_6</span>
+                </div>
+
+                <div class="right-bar">
+                    <div class="selection-list">
+                        <span class="selection-item">Scientific</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btns-control">
+                <div class="left-control">
+                    <!-- Fix Left btns -->
+                    <button class="main-light-btn b-control fix" data-func="(">(</button>
+                    <button class="main-light-btn b-control fix" data-func=")">)</button>
+                    <button class="main-light-btn b-control fix" data-func="%">%</button>
+
+                    <!-- numbers left btns -->
+                    <button class="main-light-btn b-control num-btn" data-func="7">7</button>
+                    <button class="main-light-btn b-control num-btn" data-func="8">8</button>
+                    <button class="main-light-btn b-control num-btn" data-func="9">9</button>
+                    <button class="main-light-btn b-control num-btn" data-func="4">4</button>
+                    <button class="main-light-btn b-control num-btn" data-func="5">5</button>
+                    <button class="main-light-btn b-control num-btn" data-func="6">6</button>
+                    <button class="main-light-btn b-control num-btn" data-func="1">1</button>
+                    <button class="main-light-btn b-control num-btn" data-func="2">2</button>
+                    <button class="main-light-btn b-control num-btn" data-func="3">3</button>
+                    <button class="main-light-btn b-control num-btn" data-func="0">0</button>
+
+
+                    <!-- Scientific buttons -->
+                    <button class="main-light-btn b-control adv-btn" data-func="tan(">tan</button>
+                    <button class="main-light-btn b-control adv-btn" data-func="sin(">sin</button>
+                    <button class="main-light-btn b-control adv-btn" data-func="cos(">cos</button>
+                    <button class="main-light-btn b-control adv-btn" data-func="log(">log</button>
+                    <button class="main-light-btn b-control adv-btn" data-func="ln(">ln</button>
+                    <button class="main-light-btn b-control adv-btn" data-func="exp(">e<sup>x</sup></button>
+                    <button class="main-light-btn b-control adv-btn" data-func="^">x<sup>n</sup></button>
+                    <button class="main-light-btn b-control adv-btn" data-func="e">e</button>
+                    <button class="main-light-btn b-control adv-btn" data-func="π">&pi;</button>
+                    <button class="main-light-btn b-control adv-btn" data-func="√(">&Sqrt;</button>
+
+                    <button class="main-light-btn b-control fix" data-func=".">.</button>
+
+                    <!-- Equal btn -->
+                    <button class="equal-btn" id="equal-btn">=</button>
+                </div>
+                <div class="right-control">
+                    <button class="main-dark-btn fix" id="back-btn">DEL</button>
+                    <button class="main-dark-btn op b-control fix" data-func="÷">÷</button>
+                    <button class="main-dark-btn op b-control fix" data-func="×">×</button>
+                    <button class="main-dark-btn op b-control fix" data-func="-">-</button>
+                    <button class="main-dark-btn op b-control fix" data-func="+">+</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
